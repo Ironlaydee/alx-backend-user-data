@@ -38,6 +38,6 @@ def unauthorized() -> str:
 def forbidden() -> str:
     """ GET /api/v1/unauthorized
     Return:
-      - the error handler for 403 will be executed
+      - the error handler for 404 will be executed
     """
-    abort(403)
+    abort(404)
